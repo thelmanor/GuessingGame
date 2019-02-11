@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GuessingGame"
@@ -10,9 +10,9 @@
         <Label  Text="Guessing Game" 
                 HorizontalOptions="Center"
                 VerticalOptions="Center" />
-        <Button  x:Name="rand" 
+        <Button  x:Name="RandomButton" 
                 Text="Start Game" 
-                Clicked="rand_Clicked" 
+                Clicked="RandomButton_Clicked" 
                 HorizontalOptions="Center"
                 VerticalOptions="Center" 
                 BackgroundColor="DarkBlue"
@@ -22,28 +22,28 @@
         <Label  x:Name="instruct" 
                 HorizontalOptions="Center"
                 VerticalOptions="Center" />
-        <Entry  x:Name="gnum" 
+        <Entry  x:Name="UserInputEntry" 
                 Placeholder="Enter your guess" 
                 HorizontalOptions="Center"
                 VerticalOptions="CenterAndExpand"/>
-        <Label  x:Name="result" 
+        <Label  x:Name="ResultLabel" 
                 HorizontalOptions="Center"
                 VerticalOptions="Center" />
-        <Label  x:Name="count" 
+        <Label  x:Name="CountLabel" 
                 HorizontalOptions="Center"
                 VerticalOptions="Center" />
-        <Button x:Name="guess" 
-                Text="Guess" 
-                Clicked="guess_Clicked" 
+        <Button x:Name="GuessButton" 
+                Text="Guess Button" 
+                Clicked="GuessButton_Clicked" 
                 HorizontalOptions="Center"
                 VerticalOptions="Center" 
                 BackgroundColor="DarkBlue"
                 TextColor="White"
                 BorderColor="White"
                 CornerRadius="12"/>
-        <Button x:Name="playagain" 
+        <Button x:Name="PlayAgainButton" 
                 Text="Play again" 
-                Clicked="again_Clicked" 
+                Clicked="PlayAgainButton_Clicked" 
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
                 BackgroundColor="DarkBlue"
