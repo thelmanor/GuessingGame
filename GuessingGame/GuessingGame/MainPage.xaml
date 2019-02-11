@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GuessingGame"
+             x:Class="GuessingGame.MainPage">
+
+
+
+    <StackLayout Padding="25" BackgroundColor="LightBlue">
+        <Label  Text="Guessing Game" 
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+        <Button  x:Name="rand" 
+                Text="Start Game" 
+                Clicked="rand_Clicked" 
+                HorizontalOptions="Center"
+                VerticalOptions="Center" 
+                BackgroundColor="DarkBlue"
+                TextColor="White"
+                BorderColor="White"
+                CornerRadius="12"/>
+        <Label  x:Name="instruct" 
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+        <Entry  x:Name="gnum" 
+                Placeholder="Enter your guess" 
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"/>
+        <Label  x:Name="result" 
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+        <Label  x:Name="count" 
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+        <Button x:Name="guess" 
+                Text="Guess" 
+                Clicked="guess_Clicked" 
+                HorizontalOptions="Center"
+                VerticalOptions="Center" 
+                BackgroundColor="DarkBlue"
+                TextColor="White"
+                BorderColor="White"
+                CornerRadius="12"/>
+        <Button x:Name="playagain" 
+                Text="Play again" 
+                Clicked="again_Clicked" 
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                BackgroundColor="DarkBlue"
+                TextColor="White"
+                BorderColor="White"
+                CornerRadius="12"/>
+
+    </StackLayout>
+
+</ContentPage>
